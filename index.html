@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mudanza Express — Mudanzas Rápidas, Seguras y Sin Estrés</title>
+  <meta name="description" content="Mudanza Express: mudanzas residenciales, de oficina, locales, nacionales e internacionales. Embalaje profesional, seguro incluido y atención inmediata. Cotiza gratis por WhatsApp.">
+  <meta name="keywords" content="mudanzas, mudanza express, empresa de mudanzas, mudanzas locales, mudanzas nacionales, mudanzas internacionales, embalaje profesional, mudanzas de oficina">
+  <meta property="og:title" content="Mudanza Express — Tu Mudanza, Nuestra Prioridad">
+  <meta property="og:description" content="Rápido, seguro y sin estrés. Mudanzas residenciales, de oficina, locales, nacionales e internacionales con seguro incluido.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <div class="ld-logo">
+    <img src="logo.png" alt="Mudanza Express" class="ld-logo-img">
+  </div>
+  <div class="ld-progress">
+    <div class="ld-track"><div class="ld-fill"></div></div>
+    <p class="ld-note">Cargando</p>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Menú principal">
+  <div class="nav-wrap">
+    <a href="#" class="logo" aria-label="Mudanza Express">
+      <img src="logo.png" alt="Mudanza Express" class="nav-logo-img">
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">Empresa</a></li>
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#products">Especialidades</a></li>
+      <li><a href="#why">Por qué Elegirnos</a></li>
+      <li><a href="#contact" class="nav-cta">Cotizar Ahora</a></li>
+    </ul>
+    <button class="hamburger" id="ham" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="mob" class="mob-menu" role="navigation" aria-label="Menú móvil">
+  <a href="#about">Empresa</a>
+  <a href="#services">Servicios</a>
+  <a href="#products">Especialidades</a>
+  <a href="#why">Por qué Elegirnos</a>
+  <a href="#contact">Cotizar Ahora</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section id="hero" aria-label="Encabezado principal">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-ov" aria-hidden="true"></div>
+  <canvas id="pcanvas" aria-hidden="true"></canvas>
+
+  <div class="hero-body">
+    <div class="wrap">
+      <p class="hero-eyebrow">Mudanza Express · Rápido, Seguro y Sin Estrés</p>
+      <h1 class="hero-h1">
+        <span class="h1-line"><span class="h1-inner">Tu Mudanza,</span></span>
+        <span class="h1-line"><span class="h1-inner">Nuestra</span></span>
+        <span class="h1-line h1-accent"><span class="h1-inner"><span class="accent-cycle" id="accentCycle">Prioridad</span></span></span>
+      </h1>
+      <p class="hero-p">
+        Nos encargamos de todo — desde el embalaje hasta el último traslado — para que tú solo te preocupes por lo importante. Mudanzas locales, nacionales e internacionales con la seguridad que tus pertenencias merecen.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">
+          Solicitar Cotización
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#products" class="btn-secondary">Ver Servicios</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-stats" aria-label="Cifras clave">
+    <div class="wrap">
+      <div class="stats-row">
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="500" data-prefix="+" data-suffix="">+0</span>
+          <span class="stat-lbl">Mudanzas realizadas</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="100" data-prefix="" data-suffix="%">0%</span>
+          <span class="stat-lbl">Pertenencias aseguradas</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="20" data-prefix="+" data-suffix="">+0</span>
+          <span class="stat-lbl">Ciudades de cobertura</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="24" data-prefix="" data-suffix="/7">0/7</span>
+          <span class="stat-lbl">Atención inmediata</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-deco" aria-hidden="true">
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+    <div class="hero-beam"></div>
+  </div>
+  <div class="hero-scroll-cue" aria-hidden="true">
+    <svg width="22" height="34" viewBox="0 0 22 34" fill="none">
+      <rect x="1" y="1" width="20" height="32" rx="10" stroke="rgba(255,255,255,.25)" stroke-width="1.5"/>
+      <circle class="mouse-dot" cx="11" cy="9" r="3" fill="rgba(255,255,255,.55)"/>
+    </svg>
+    <span class="scroll-label">Scroll</span>
+  </div>
+  <div class="hero-badge" aria-hidden="true">
+    <span class="hb-dot"></span>
+    <span class="hb-text">Cotización sin costo</span>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section id="trust" aria-label="Confianza y respaldo">
+  <div class="wrap">
+    <div class="trust-row">
+      <p class="trust-label">Por qué confían en nosotros</p>
+      <div class="trust-chips">
+        <span class="trust-chip">Seguro incluido</span>
+        <span class="trust-chip">Personal capacitado</span>
+        <span class="trust-chip">Flota propia</span>
+        <span class="trust-chip">Cobertura nacional</span>
+        <span class="trust-chip">Atención 24/7</span>
+        <span class="trust-chip">Sin costos ocultos</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANNER: EMBALAJE -->
+<section class="img-banner" style="background-image:url('https://images.unsplash.com/photo-1600725935160-f67ee4f6084a?auto=format&fit=crop&w=1600&q=75');" aria-label="Embalaje profesional">
+  <div class="img-banner-ov" aria-hidden="true"></div>
+  <div class="img-banner-content rev">
+    <p class="eyebrow eyebrow--white">Embalaje que Protege</p>
+    <h2 class="heading heading--white">Cada Caja, Cada Objeto, con el Cuidado que Merece</h2>
+    <p class="sub sub--white">Utilizamos materiales de calidad y técnicas profesionales para que absolutamente nada se dañe en el camino.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section bg-white">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-img-wrap rev from-l">
+        <div class="about-img-main">
+          <img
+            src="https://images.unsplash.com/photo-1714647211902-bb711d643a17?auto=format&fit=crop&w=800&q=80"
+            alt="Mujer empacando cajas de mudanza cuidadosamente en su hogar" loading="lazy">
+        </div>
+        <div class="about-accent">
+          <p class="a-num">100%</p>
+          <p class="a-lbl">Compromiso con tu tranquilidad</p>
+        </div>
+      </div>
+      <div class="about-text rev">
+        <p class="eyebrow">Quiénes somos</p>
+        <h2 class="heading">Tu Mudanza, Resuelta de Principio a Fin</h2>
+        <p>En Mudanza Express convertimos uno de los momentos más estresantes en un proceso simple, ordenado y sin sorpresas. Coordinamos cada detalle de tu mudanza —embalaje, carga, transporte y descarga— con un equipo capacitado que trata tus pertenencias como propias.</p>
+        <p>Ya sea una mudanza local, un traslado a otra ciudad o una reubicación internacional, contamos con la logística, el equipo y la experiencia para que todo llegue a tiempo, completo y en perfecto estado.</p>
+        <div class="about-stats">
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="500" data-prefix="+" data-suffix=""></p>
+            <p class="a-stat-l">Mudanzas realizadas</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="100" data-prefix="" data-suffix="%"></p>
+            <p class="a-stat-l">Pertenencias aseguradas</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="20" data-prefix="+" data-suffix=""></p>
+            <p class="a-stat-l">Ciudades de cobertura</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="24" data-prefix="" data-suffix="/7"></p>
+            <p class="a-stat-l">Atención disponible</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANNER: NUEVO HOGAR -->
+<section class="img-banner" style="background-image:url('https://images.unsplash.com/photo-1758523670991-ee93bc48d81d?auto=format&fit=crop&w=1600&q=75');" aria-label="Tu nuevo hogar">
+  <div class="img-banner-ov" aria-hidden="true"></div>
+  <div class="img-banner-content rev">
+    <p class="eyebrow eyebrow--white">Tu Nuevo Comienzo</p>
+    <h2 class="heading heading--white">Llega a tu Nuevo Hogar sin Preocupaciones</h2>
+    <p class="sub sub--white">Nosotros nos encargamos del esfuerzo, tú disfruta el momento de instalarte en un lugar nuevo.</p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section bg-off">
+  <div class="wrap">
+    <div class="section-head section-head--center">
+      <p class="eyebrow">Lo que hacemos</p>
+      <h2 class="heading">Servicios Pensados para tu Tranquilidad</h2>
+      <p class="sub">Desde el primer empaque hasta la última caja en su lugar: nos encargamos de que tu mudanza fluya sin contratiempos.</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc-card rev d1">
+        <span class="svc-num" aria-hidden="true">01</span>
+        <div class="svc-icon ic-blue">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0051A9" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+            <line x1="12" y1="22.08" x2="12" y2="12"/>
+          </svg>
+        </div>
+        <h3>Mudanzas Residenciales y de Oficina</h3>
+        <p>Traslado integral de casas, departamentos y oficinas con desarmado, embalaje y armado incluido. Un solo equipo se encarga de todo, de principio a fin.</p>
+        <div class="svc-tags">
+          <span class="tag tag-b">Casas</span>
+          <span class="tag tag-b">Departamentos</span>
+          <span class="tag tag-b">Oficinas</span>
+          <span class="tag tag-b">Mudanzas exprés</span>
+        </div>
+      </div>
+
+      <div class="svc-card rev d2">
+        <span class="svc-num" aria-hidden="true">02</span>
+        <div class="svc-icon ic-green">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B45309" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"/>
+            <path d="M4 6v12c0 1.1.9 2 2 2h14v-4"/>
+            <path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/>
+          </svg>
+        </div>
+        <h3>Embalaje y Protección Profesional</h3>
+        <p>Empacamos tus pertenencias con materiales de calidad y técnicas especializadas para muebles, electrodomésticos y objetos frágiles.</p>
+        <div class="svc-tags">
+          <span class="tag tag-g">Material incluido</span>
+          <span class="tag tag-g">Objetos frágiles</span>
+          <span class="tag tag-g">Electrodomésticos</span>
+        </div>
+      </div>
+
+      <div class="svc-card rev d3">
+        <span class="svc-num" aria-hidden="true">03</span>
+        <div class="svc-icon ic-slate">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="1" y="3" width="15" height="13" rx="1"/>
+            <path d="M16 8h4l3 5v3h-7V8z"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+        </div>
+        <h3>Logística y Transporte Nacional</h3>
+        <p>Coordinamos rutas, tiempos y vehículos adecuados para que tu mudanza local, nacional o internacional llegue completa y a tiempo.</p>
+        <div class="svc-tags">
+          <span class="tag">Local</span>
+          <span class="tag">Nacional</span>
+          <span class="tag">Internacional</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BANNER: LOGÍSTICA -->
+<section class="img-banner" style="background-image:url('https://images.unsplash.com/photo-1694715669993-ea0022b470f7?auto=format&fit=crop&w=1600&q=75');" aria-label="Logística puerta a puerta">
+  <div class="img-banner-ov" aria-hidden="true"></div>
+  <div class="img-banner-content rev">
+    <p class="eyebrow eyebrow--white">Logística sin Complicaciones</p>
+    <h2 class="heading heading--white">Puerta a Puerta, sin Importar la Distancia</h2>
+    <p class="sub sub--white">Coordinamos cada ruta y cada entrega para que tu mudanza llegue completa, a tiempo y en el lugar exacto.</p>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="section bg-white">
+  <div class="wrap">
+    <div class="prod-header">
+      <div>
+        <p class="eyebrow">Especialidades</p>
+        <h2 class="heading">Un Servicio para Cada Tipo de Mudanza</h2>
+      </div>
+      <a href="#contact" class="btn-outline rev">Solicitar Cotización</a>
+    </div>
+    <div class="prod-grid">
+
+      <div class="prod-card rev d1">
+        <div class="p-icon ic-blue">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0051A9" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <h3>Mudanza Residencial</h3>
+        <p>Casas y departamentos, de un cuarto a una casa completa.</p>
+        <span class="prod-pill">Hogar</span>
+      </div>
+
+      <div class="prod-card rev d2">
+        <div class="p-icon ic-green">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B45309" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 7h-3V5a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3v2H4a1 1 0 0 0-1 1v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a1 1 0 0 0-1-1z"/>
+            <path d="M10 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2h-4z"/>
+          </svg>
+        </div>
+        <h3>Mudanza de Oficinas</h3>
+        <p>Reubicación de oficinas con mínima interrupción a tu operación.</p>
+        <span class="prod-pill">Corporativo</span>
+      </div>
+
+      <div class="prod-card rev d3">
+        <div class="p-icon ic-slate">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <h3>Embalaje de Cajas</h3>
+        <p>Material profesional y técnica de empaque para cada objeto.</p>
+        <span class="prod-pill">Embalaje</span>
+      </div>
+
+      <div class="prod-card rev d4">
+        <div class="p-icon ic-blue">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0051A9" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+          </svg>
+        </div>
+        <h3>Desarmado y Armado de Muebles</h3>
+        <p>Desarmamos y armamos tus muebles sin dañarlos.</p>
+        <span class="prod-pill">Muebles</span>
+      </div>
+
+      <div class="prod-card rev d1">
+        <div class="p-icon ic-green">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B45309" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+        </div>
+        <h3>Objetos Frágiles y de Valor</h3>
+        <p>Manejo especializado para vidrio, arte y antigüedades.</p>
+        <span class="prod-pill">Frágiles</span>
+      </div>
+
+      <div class="prod-card rev d2">
+        <div class="p-icon ic-slate">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+        </div>
+        <h3>Mudanza Local</h3>
+        <p>Traslados dentro de tu misma ciudad, rápidos y puntuales.</p>
+        <span class="prod-pill">Local</span>
+      </div>
+
+      <div class="prod-card rev d3">
+        <div class="p-icon ic-blue">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0051A9" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 20l-5.447-2.724A1 1 0 0 1 3 16.382V5.618a1 1 0 0 1 1.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0 0 21 18.83V8.062a1 1 0 0 0-.553-.894L15 4m0 13V4m0 0L9 7"/>
+          </svg>
+        </div>
+        <h3>Mudanza Foránea</h3>
+        <p>Cobertura a nivel nacional con seguimiento en tiempo real.</p>
+        <span class="prod-pill">Nacional</span>
+      </div>
+
+      <div class="prod-card rev d4">
+        <div class="p-icon ic-green">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B45309" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            <path d="M4 8h16M4 16h16"/>
+          </svg>
+        </div>
+        <h3>Mudanza Internacional</h3>
+        <p>Trámites y logística para tu mudanza fuera del país.</p>
+        <span class="prod-pill">Internacional</span>
+      </div>
+
+      <div class="prod-card rev d1">
+        <div class="p-icon ic-slate">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8"/>
+            <path d="M3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8"/>
+            <path d="M3 8l9 5 9-5M12 13v8"/>
+          </svg>
+        </div>
+        <h3>Almacenaje Temporal</h3>
+        <p>Guardamos tus pertenencias el tiempo que necesites.</p>
+        <span class="prod-pill">Almacenaje</span>
+      </div>
+
+      <div class="prod-card rev d2">
+        <div class="p-icon ic-blue">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0051A9" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+            <line x1="6" y1="1" x2="6" y2="4"/>
+            <line x1="10" y1="1" x2="10" y2="4"/>
+            <line x1="14" y1="1" x2="14" y2="4"/>
+          </svg>
+        </div>
+        <h3>Carga y Descarga</h3>
+        <p>Personal capacitado para el manejo seguro de tus cosas.</p>
+        <span class="prod-pill">Logística</span>
+      </div>
+
+      <div class="prod-card rev d3">
+        <div class="p-icon ic-green">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B45309" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+          </svg>
+        </div>
+        <h3>Electrodomésticos y Línea Blanca</h3>
+        <p>Transporte especializado para equipos delicados.</p>
+        <span class="prod-pill">Electrodomésticos</span>
+      </div>
+
+      <div class="prod-card rev d4">
+        <div class="p-icon ic-slate">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <h3>Servicio Express</h3>
+        <p>Mudanzas de última hora, el mismo día que lo necesites.</p>
+        <span class="prod-pill">Express</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BANNER: CUIDADO -->
+<section class="img-banner" style="background-image:url('https://images.unsplash.com/photo-1586781383963-8e66f88077ec?auto=format&fit=crop&w=1600&q=75');" aria-label="Manejo responsable de tus pertenencias">
+  <div class="img-banner-ov" aria-hidden="true"></div>
+  <div class="img-banner-content rev">
+    <p class="eyebrow eyebrow--white">Manejo Responsable</p>
+    <h2 class="heading heading--white">Tratamos tus Pertenencias como Propias</h2>
+    <p class="sub sub--white">Cada objeto se transporta con el cuidado y la seguridad que esperarías si lo movieras tú mismo.</p>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why" class="section bg-navy">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-img-wrap rev from-r">
+        <div class="why-img-main">
+          <img
+            src="https://images.unsplash.com/photo-1730154838368-c37b1fdebcf6?auto=format&fit=crop&w=800&q=80"
+            alt="Cajas de mudanza organizadas junto a plantas en un hogar en proceso de mudanza" loading="lazy">
+        </div>
+        <div class="why-img-badge">
+          <p class="wib-n">100%</p>
+          <p class="wib-l">Pertenencias aseguradas</p>
+        </div>
+      </div>
+      <div class="why-content rev">
+        <p class="eyebrow eyebrow--white">Por qué elegirnos</p>
+        <h2 class="heading heading--white">La Diferencia Mudanza Express</h2>
+        <p class="sub sub--white">Rápido, seguro y sin estrés: así trabajamos en cada mudanza, sin importar el tamaño o la distancia.</p>
+        <div class="benefit-list">
+          <div class="benefit">
+            <div class="ben-icon ben-icon-b">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5B9CFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Rápidos</h4>
+              <p>Llegamos a tiempo, siempre. Coordinamos cada mudanza con puntualidad para que no pierdas ni un minuto.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-g">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FBBF24" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <polyline points="9 12 11 14 15 10"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Seguros</h4>
+              <p>Cuidamos tus pertenencias como si fueran nuestras, con seguro incluido en cada traslado.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-b">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5B9CFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Profesionales</h4>
+              <p>Equipo capacitado y comprometido, con experiencia en todo tipo de mudanzas.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-w">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Cobertura Total</h4>
+              <p>Servicio local, nacional e internacional, para que llegues a donde vayas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANNER: ALMACENAJE -->
+<section class="img-banner" style="background-image:url('https://images.unsplash.com/photo-1649313444539-a8900c5cdc54?auto=format&fit=crop&w=1600&q=75');" aria-label="Almacenaje temporal">
+  <div class="img-banner-ov" aria-hidden="true"></div>
+  <div class="img-banner-content rev">
+    <p class="eyebrow eyebrow--white">¿Necesitas Tiempo?</p>
+    <h2 class="heading heading--white">Almacenamos tus Pertenencias el Tiempo que Necesites</h2>
+    <p class="sub sub--white">Espacios seguros y monitoreados para guardar tus cosas mientras te organizas.</p>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section id="numbers">
+  <div class="wrap">
+    <div class="numbers-grid">
+      <div class="number-item rev d1">
+        <p class="num-v" data-count="500" data-prefix="+" data-suffix=""></p>
+        <p class="num-l">Mudanzas realizadas</p>
+      </div>
+      <div class="number-item rev d2">
+        <p class="num-v" data-count="100" data-prefix="" data-suffix="%"></p>
+        <p class="num-l">Clientes satisfechos</p>
+      </div>
+      <div class="number-item rev d3">
+        <p class="num-v" data-count="20" data-prefix="+" data-suffix=""></p>
+        <p class="num-l">Ciudades de cobertura</p>
+      </div>
+      <div class="number-item rev d4">
+        <p class="num-v" data-count="24" data-prefix="" data-suffix="/7"></p>
+        <p class="num-l">Atención disponible</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANNER: COBERTURA -->
+<section class="img-banner" style="background-image:url('https://images.unsplash.com/photo-1636543133032-e175f2adfe25?auto=format&fit=crop&w=1600&q=75');" aria-label="Cobertura en toda la ciudad">
+  <div class="img-banner-ov" aria-hidden="true"></div>
+  <div class="img-banner-content rev">
+    <p class="eyebrow eyebrow--white">Estamos Donde Nos Necesites</p>
+    <h2 class="heading heading--white">Cobertura en Toda la Ciudad y Más Allá</h2>
+    <p class="sub sub--white">Local, nacional e internacional: sin importar el destino, Mudanza Express te acompaña.</p>
+  </div>
+</section>
+
+<!-- ESPECIALIDADES -->
+<section id="brands">
+  <div class="wrap">
+    <div class="brands-head rev">
+      <p class="eyebrow eyebrow--white">Lo que hacemos mejor</p>
+      <h2 class="heading heading--white">Un Servicio para Cada Necesidad</h2>
+      <p class="brands-sub">Sin importar el tamaño o la distancia, tenemos la solución logística adecuada para tu mudanza.</p>
+    </div>
+    <div class="brands-grid">
+      <div class="brand-card rev d1">
+        <div class="brand-card-inner">
+          <div class="bi-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0051A9" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            </svg>
+          </div>
+          <p class="bi-label">Mudanza Local</p>
+        </div>
+      </div>
+      <div class="brand-card rev d2">
+        <div class="brand-card-inner">
+          <div class="bi-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0051A9" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 20l-5.447-2.724A1 1 0 0 1 3 16.382V5.618a1 1 0 0 1 1.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0 0 21 18.83V8.062a1 1 0 0 0-.553-.894L15 4m0 13V4m0 0L9 7"/>
+            </svg>
+          </div>
+          <p class="bi-label">Mudanza Foránea</p>
+        </div>
+      </div>
+      <div class="brand-card rev d3">
+        <div class="brand-card-inner">
+          <div class="bi-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0051A9" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </div>
+          <p class="bi-label">Mudanza Internacional</p>
+        </div>
+      </div>
+      <div class="brand-card rev d4">
+        <div class="brand-card-inner">
+          <div class="bi-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0051A9" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 7h-3V5a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3v2H4a1 1 0 0 0-1 1v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a1 1 0 0 0-1-1z"/>
+              <path d="M10 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2h-4z"/>
+            </svg>
+          </div>
+          <p class="bi-label">Embalaje Profesional</p>
+        </div>
+      </div>
+      <div class="brand-card rev d5">
+        <div class="brand-card-inner">
+          <div class="bi-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0051A9" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 7h-3V5a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3v2H4a1 1 0 0 0-1 1v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a1 1 0 0 0-1-1z"/>
+              <line x1="3" y1="12" x2="21" y2="12"/>
+            </svg>
+          </div>
+          <p class="bi-label">Mudanza de Oficinas</p>
+        </div>
+      </div>
+      <div class="brand-card rev d1">
+        <div class="brand-card-inner">
+          <div class="bi-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0051A9" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8"/>
+              <path d="M3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8"/>
+              <path d="M3 8l9 5 9-5M12 13v8"/>
+            </svg>
+          </div>
+          <p class="bi-label">Almacenaje Temporal</p>
+        </div>
+      </div>
+      <div class="brand-card rev d2">
+        <div class="brand-card-inner">
+          <div class="bi-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0051A9" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+            </svg>
+          </div>
+          <p class="bi-label">Carga Pesada</p>
+        </div>
+      </div>
+      <div class="brand-card rev d3">
+        <div class="brand-card-inner">
+          <div class="bi-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0051A9" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <p class="bi-label">Desarmado de Muebles</p>
+        </div>
+      </div>
+      <div class="brand-card rev d4">
+        <div class="brand-card-inner">
+          <div class="bi-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0051A9" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+          </div>
+          <p class="bi-label">Electrodomésticos</p>
+        </div>
+      </div>
+      <div class="brand-card rev d5">
+        <div class="brand-card-inner">
+          <div class="bi-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0051A9" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <p class="bi-label">Servicio Express</p>
+        </div>
+      </div>
+    </div>
+    <p class="brands-note rev">Cobertura local, nacional e internacional</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section bg-off">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <div class="contact-info rev from-l">
+        <p class="eyebrow">Contáctanos</p>
+        <h2 class="heading">Cotiza tu Mudanza sin Costo</h2>
+        <p class="sub" style="margin-bottom:36px">Cuéntanos qué necesitas mover y te ayudamos a planear cada detalle, sin compromiso.</p>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0051A9" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.27z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">WhatsApp</p>
+            <p class="c-value"><a href="https://wa.me/525521068956" target="_blank" rel="noopener noreferrer">55 2106 8956</a></p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0051A9" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="#0051A9" stroke="none"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">Redes sociales</p>
+            <p class="c-value"><a href="https://www.instagram.com/mudanzaexpress001?igsh=M2IweTEwaWcxZTdu" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="https://vm.tiktok.com/ZS9rDdm9nxF6s-wgNx0/" target="_blank" rel="noopener noreferrer">TikTok</a></p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0051A9" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">Cobertura</p>
+            <p class="c-value">Ciudad de México y área metropolitana</p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0051A9" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">Horario de atención</p>
+            <p class="c-value">Lunes a Domingo: 8:00 – 20:00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rev">
+        <div class="form-wrap">
+          <h3>Solicitar Cotización</h3>
+          <p class="form-sub">Te respondemos en menos de 24 horas.</p>
+          <form id="cForm" novalidate>
+            <div class="frow">
+              <div class="fg">
+                <label class="fl" for="fn">Nombre completo *</label>
+                <input class="fi" type="text" id="fn" name="nombre" placeholder="Su nombre completo" required autocomplete="name">
+              </div>
+              <div class="fg">
+                <label class="fl" for="ft">WhatsApp *</label>
+                <input class="fi" type="tel" id="ft" name="telefono" placeholder="+52 55 0000 0000" required autocomplete="tel">
+              </div>
+            </div>
+            <div class="fg">
+              <label class="fl" for="fe">Empresa</label>
+              <input class="fi" type="text" id="fe" name="empresa" placeholder="Nombre de la empresa (opcional)" autocomplete="organization">
+            </div>
+            <div class="fg">
+              <label class="fl" for="fs">Tipo de mudanza *</label>
+              <select class="fi" id="fs" name="tipo" required>
+                <option value="">Seleccione el tipo de mudanza</option>
+                <option value="Mudanza residencial (casa o depto)">Mudanza residencial (casa o depto)</option>
+                <option value="Mudanza de oficina">Mudanza de oficina</option>
+                <option value="Mudanza local">Mudanza local</option>
+                <option value="Mudanza foránea / nacional">Mudanza foránea / nacional</option>
+                <option value="Mudanza internacional">Mudanza internacional</option>
+                <option value="Solo embalaje">Solo embalaje</option>
+                <option value="Almacenaje temporal">Almacenaje temporal</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label class="fl" for="fm">Cuéntanos sobre tu mudanza *</label>
+              <textarea class="fi" id="fm" name="mensaje" rows="4" placeholder="Origen, destino, fecha aproximada y qué necesitas mover..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+              Enviar por WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">
+          <img src="logo.png" alt="Mudanza Express" class="foot-logo-img">
+        </div>
+        <p class="foot-desc">En Mudanza Express nos encargamos de que tu traslado sea rápido, seguro y sin estrés. Mudanzas locales, nacionales e internacionales con un equipo profesional y comprometido.</p>
+      </div>
+      <div>
+        <p class="foot-col-title">Servicios</p>
+        <ul class="foot-links">
+          <li><a href="#services">Mudanzas Residenciales</a></li>
+          <li><a href="#services">Embalaje Profesional</a></li>
+          <li><a href="#services">Logística y Transporte</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-col-title">Especialidades</p>
+        <ul class="foot-links">
+          <li><a href="#products">Mudanza Local</a></li>
+          <li><a href="#products">Mudanza Nacional</a></li>
+          <li><a href="#products">Mudanza Internacional</a></li>
+          <li><a href="#products">Ver todos los servicios</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-col-title">Contacto</p>
+        <ul class="foot-links">
+          <li><a href="https://wa.me/525521068956" target="_blank" rel="noopener noreferrer">WhatsApp: 55 2106 8956</a></li>
+          <li><a href="https://www.instagram.com/mudanzaexpress001?igsh=M2IweTEwaWcxZTdu" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://vm.tiktok.com/ZS9rDdm9nxF6s-wgNx0/" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+          <li><a href="#contact">Cotizar Mudanza</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 <span>Mudanza Express</span>. Todos los derechos reservados.</p>
+      <p>Ciudad de México y área metropolitana</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<div class="wa-float">
+  <span class="wa-tip">Escríbenos por WhatsApp</span>
+  <a href="https://wa.me/525521068956"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="wa-btn"
+     aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+      <path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
