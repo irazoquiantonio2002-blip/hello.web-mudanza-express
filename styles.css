@@ -169,7 +169,7 @@ nav.stuck .hamburger span { background: var(--navy); }
 }
 .hero-bg {
   position: absolute; inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1698917414969-feade59e3343?auto=format&fit=crop&w=1920&q=80');
+  background-image: url('imagenes/7.jpeg');
   background-size: cover;
   background-position: center 30%;
   z-index: 0;
@@ -308,14 +308,14 @@ nav.stuck .hamburger span { background: var(--navy); }
 
 /* ── LOADER LOGO ── */
 .ld-logo-img {
-  height: 90px; width: auto; object-fit: contain;
+  height: 160px; width: auto; object-fit: contain;
   animation: dropIn .7s cubic-bezier(.34,1.56,.64,1) .12s both;
   filter: drop-shadow(0 6px 24px rgba(0,81,169,.28));
 }
 
 /* ── NAV LOGO ── */
 .nav-logo-img {
-  height: 40px; width: auto; object-fit: contain;
+  height: 56px; width: auto; object-fit: contain;
   display: block; transition: filter .3s;
 }
 nav:not(.stuck) .nav-logo-img { filter: brightness(0) invert(1); }
@@ -674,6 +674,16 @@ nav:not(.stuck) .nav-logo-img { filter: brightness(0) invert(1); }
 
 
 /* ═══════════════════════════════
+   GALLERY — real work photos
+   ═══════════════════════════════ */
+#gallery { background: var(--off); }
+.gallery-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; }
+.gallery-item { border-radius: 14px; overflow: hidden; aspect-ratio: 1/1; box-shadow: var(--shadow-sm); }
+.gallery-item img { width: 100%; height: 100%; transition: transform .5s cubic-bezier(.4,0,.2,1); }
+.gallery-item:hover img { transform: scale(1.06); }
+
+
+/* ═══════════════════════════════
    WHY US — dark section
    ═══════════════════════════════ */
 #why { background: var(--navy); overflow: hidden; }
@@ -993,6 +1003,7 @@ footer { background: var(--navy); padding: 64px 0 28px; }
   .why-img-main { aspect-ratio: 16/9; }
   .svc-grid { grid-template-columns: 1fr 1fr; }
   .prod-grid { grid-template-columns: repeat(2,1fr); }
+  .gallery-grid { grid-template-columns: repeat(3,1fr); }
   .numbers-grid { grid-template-columns: 1fr 1fr; }
   .number-item:nth-child(2) { border-right: none; }
   .number-item:nth-child(1),
@@ -1023,6 +1034,7 @@ footer { background: var(--navy); padding: 64px 0 28px; }
 
 @media (max-width: 480px) {
   .prod-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2,1fr); }
   .numbers-grid { grid-template-columns: 1fr; }
   .number-item { border-right: none !important; border-bottom: 1px solid var(--border); }
   .number-item:last-child { border-bottom: none; }
